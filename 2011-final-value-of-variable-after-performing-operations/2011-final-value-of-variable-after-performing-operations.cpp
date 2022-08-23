@@ -3,7 +3,8 @@ public:
     int finalValueAfterOperations(vector<string>& op)
     {
         int x = 0;
-        for(int i = 0; i < op.size(); i++)
+        int len = op.size();
+        for(int i = 0; i < len; i++)
         {
             if(op[i][0]=='+' || op[i][1]=='+')
                 x++;
