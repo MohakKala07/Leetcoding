@@ -17,10 +17,9 @@ public:
             {
                 for(int j=0;j<c;j++)
                 {
-                    int m=matrix[i][j];
-                    if(m==rowMin[i] && m==colMax[j])
+                    if(matrix[i][j]==rowMin[i] && matrix[i][j]==colMax[j])
                     {
-                        return {m};
+                        return {matrix[i][j]};
                     }
                 }
             }
