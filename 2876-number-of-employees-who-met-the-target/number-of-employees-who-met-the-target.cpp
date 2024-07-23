@@ -3,9 +3,9 @@ public:
     int numberOfEmployeesWhoMetTarget(vector<int>& hours, int target) {
         int c=0;
         int n=hours.size();
-        for(int i=0;i<n;i++)
+        for(int i : hours)
         {
-            if(hours[i]>=target)
+            if(i>=target)
                 c++;
         }
         return c;
